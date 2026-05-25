@@ -25,10 +25,9 @@ SECRET_KEY = "django-insecure-1wk^f-&6^u@vg-90!0$51n7tq1iw6a_i5p-9$utmq7e&$*rjr6
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# Modificado para que acepte cualquier dominio en producción (como el de Render)
+ALLOWED_HOSTS = ["*"]
 
-
-# Application definition
 
 # Application definition
 
@@ -130,10 +129,17 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 
+# SOLUCIÓN AL ERROR EN RENDER: Carpeta física donde se guardarán los estáticos compilados
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Configuración de CORS y CSRF adaptada para soportar Localhost y Producción externa (Vercel)
+CORS_ALLOW_ALL_ORIGINS = True  # Permite que tu front de Vercel se conecte sin trabas de CORS
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
@@ -143,4 +149,5 @@ CORS_ALLOWED_ORIGINS = [
 CSRF_TRUSTED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://*.vercel.app",  # Permite peticiones de dominios de Vercel de forma segura
 ]
