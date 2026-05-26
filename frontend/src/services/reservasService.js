@@ -1,5 +1,5 @@
 // (Ajusta si tenés prefijo 'api/' o un puerto diferente)
-const API_URL = "http://127.0.0.1:8000"; 
+const API_URL = "https://proyecto-concesionaria-1.onrender.com"; 
 
 // ----- 1. LOS TRADUCTORES (API <-> React) -----
 // (Estos no cambian, la forma de los datos es la misma)

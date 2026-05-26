@@ -1,7 +1,7 @@
 // services/reportesService.js
 
 // 🔴 CORRECCIÓN: Se elimina el prefijo "/api" ya que el backend lo sirve directamente desde la raíz.
-const API_BASE_URL = "http://127.0.0.1:8000"; 
+const API_BASE_URL = "https://proyecto-concesionaria-1.onrender.com"; 
 
 /**
  * Función genérica para manejar la respuesta de la API.

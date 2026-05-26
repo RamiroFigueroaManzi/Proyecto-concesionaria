@@ -14,7 +14,7 @@
  */
 
 // Prefijo base que incluye tu app 'alquileres'
-const API_PREFIX = "http://127.0.0.1:8000";
+const API_PREFIX = "https://proyecto-concesionaria-1.onrender.com";
 
 /**
  * Función genérica para manejar las respuestas del API.
