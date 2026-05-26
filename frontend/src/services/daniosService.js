@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://127.0.0.1:8000/danios/";
+const API_URL = "https://proyecto-concesionaria-1.onrender.com/danios/";
 
 export const obtenerDanios = async (page = 1, pageSize = 5, patente = "") => {
     let url = `${API_URL}?page=${page}&page_size=${pageSize}`;

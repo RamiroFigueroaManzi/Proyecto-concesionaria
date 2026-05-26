@@ -1,7 +1,7 @@
 // src/services/empleadosService.js
 
 // --- Definimos la URL base de tu API en un solo lugar ---
-const URL_BASE = 'http://localhost:8000/empleados/';
+const URL_BASE = 'https://proyecto-concesionaria-1.onrender.com/empleados/';
 
 
 /**
