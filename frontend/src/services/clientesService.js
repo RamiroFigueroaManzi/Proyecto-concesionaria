@@ -1,6 +1,6 @@
 // ----- REEMPLAZÁ TODO TU src/services/clientesService.js CON ESTO -----
 
-const API_URL = "http://127.0.0.1:8000"; // (Ajusta si tenés prefijo 'api/')
+const API_URL = "https://proyecto-concesionaria-1.onrender.com/"; // (Ajusta si tenés prefijo 'api/')
 
 
 // ----- 🔴 1. LOS TRADUCTORES (Igual que en Empleados) 🔴 -----
